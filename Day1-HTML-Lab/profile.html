@@ -111,7 +111,7 @@
     <h2>Employee Registration</h2>
 
     <form>
-
+      <!-- first form-->
         <fieldset>
             <legend>Personal Information</legend>
 
@@ -172,6 +172,103 @@
                 >
             </p>
         </fieldset>
+
+        <!-- second form-->
+
+        <fieldset>
+    <legend>Employment Information</legend>
+
+    <p>
+        <label for="department">Department:</label>
+
+        <select id="department" name="department">
+            <option value="IT">IT</option>
+            <option value="Markiting">Markiting</option>
+            <option value="human-resources">Human Resources</option>
+        </select>
+    </p>
+
+    <p>Employment Type:</p>
+
+    <input
+        type="radio"
+        id="full-time"
+        name="employmentType"
+        value="Full-Time"
+    >
+
+    <label for="full-time">Full-Time</label>
+
+    <input
+        type="radio"
+        id="part-time"
+        name="employmentType"
+        value="Part-Time"
+    >
+
+    <label for="part-time">Part-Time</label>
+
+    <p>Benefits:</p>
+
+    <input
+        type="checkbox"
+        id="health-insurance"
+        name="benefits"
+        value="Health Insurance"
+    >
+
+    <label for="health-insurance">Health Insurance</label>
+
+    <input
+        type="checkbox"
+        id="transport"
+        name="benefits"
+        value="Transport"
+    >
+
+    <label for="transport">Transport Allowance</label>
+
+    <p>
+        <label for="bio">Bio:</label>
+    </p>
+
+    <textarea id="bio" name="bio"></textarea>
+
+    <p>
+        <label for="resume">Resume:</label>
+
+        <input
+            type="file"
+            id="resume"
+            name="resume"
+            accept=".pdf,.doc,.docx"
+        >
+    </p>
+
+    <p>
+        <label for="employee-id">Employee ID:</label>
+
+        <input
+            type="text"
+            id="employee-id"
+            name="employeeId"
+            value="EMP-001"
+            readonly
+        >
+    </p>
+
+    <p>
+        <label for="legacy-field">Legacy Field:</label>
+
+        <input
+            type="text"
+            id="legacy-field"
+            name="legacyField"
+            value="Old System Value"
+            disabled
+        >
+    </p>
+</fieldset>
 
     </form>
 </section>
