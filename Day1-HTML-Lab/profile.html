@@ -77,7 +77,7 @@
     </ol>
   </section>
 
-  
+
   <section id="experience">
     <h2>Experience</h2>
 
@@ -105,6 +105,76 @@
         </tbody>
     </table>
   </section>
+
+
+  <section id="registration">
+    <h2>Employee Registration</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <p>
+                <label for="full-name">Employee Full Name:</label>
+
+                <input
+                    type="text"
+                    id="full-name"
+                    name="fullName"
+                    required
+                    minlength="3"
+                    maxlength="50"
+                >
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="age">Age:</label>
+
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    min="18"
+                    max="65"
+                >
+            </p>
+
+            <p>
+                <label for="hire-date">Hire Date:</label>
+
+                <input
+                    type="date"
+                    id="hire-date"
+                    name="hireDate"
+                >
+            </p>
+
+            <p>
+                <label for="employee-code">Employee Code:</label>
+
+                <input
+                    type="text"
+                    id="employee-code"
+                    name="employeeCode"
+                    pattern="[A-Za-z]{2}[0-9]{4}"
+                >
+            </p>
+        </fieldset>
+
+    </form>
+</section>
 
 </main>
 
