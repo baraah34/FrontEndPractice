@@ -68,3 +68,116 @@
             </form>
 
         </section>
+
+                <!-- Product filters -->
+        <aside>
+
+            <h2>Refine Results</h2>
+
+            <form>
+
+    
+                <fieldset>
+
+                    <legend>Brand</legend>
+
+                    <input
+                        type="checkbox"
+                        id="brand-apple"
+                        name="brand"
+                        value="apple"
+                    >
+                    <label for="brand-apple">Airpods</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="brand-sonic"
+                        name="brand"
+                        value="sonic"
+                    >
+                    <label for="brand-sonic">SonicWave</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="brand-aero"
+                        name="brand"
+                        value="aero"
+                    >
+                    <label for="brand-aero">AeroSound</label>
+
+                </fieldset>
+
+                <!--  radio buttons -->
+                <fieldset>
+
+                    <legend>Minimum Customer Rating</legend>
+
+                    <input
+                        type="radio"
+                        id="rating-four"
+                        name="rating"
+                        value="4"
+                    >
+                    <label for="rating-four">4 stars and above</label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="rating-three"
+                        name="rating"
+                        value="3"
+                    >
+                    <label for="rating-three">3 stars and above</label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="rating-any"
+                        name="rating"
+                        value="any"
+                    >
+                    <label for="rating-one"> 1 start </label>
+
+                </fieldset>
+
+                <!-- Price  -->
+                <fieldset>
+
+                    <legend>Price Range</legend>
+
+                    <label for="minimum-price">Minimum price:</label>
+
+                    <input
+                        type="number"
+                        id="minimum-price"
+                        name="minimum-price"
+                        min="0"
+                        placeholder="0"
+                    >
+
+                    <br>
+
+                    <label for="maximum-price">Maximum price:</label>
+
+                    <input
+                        type="number"
+                        id="maximum-price"
+                        name="maximum-price"
+                        min="0"
+                        placeholder="100"
+                    >
+
+                </fieldset>
+
+                <button type="submit">Apply Filters</button>
+                <button type="reset">Clear Filters</button>
+
+            </form>
+
+        </aside>
