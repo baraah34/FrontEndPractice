@@ -61,3 +61,25 @@ section h2 {
     border-bottom: 2px solid #ce002d;
     padding-bottom: 8px;
 }
+#home {
+    text-align: center;
+    background-color: #f0dee6;
+}
+
+#home h2 {
+    border-bottom: none;
+}
+
+#home button {
+    background-color: #7a0938;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home button:hover {
+    background-color: #f5b1c8;
+}
