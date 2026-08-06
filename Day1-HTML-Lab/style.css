@@ -116,3 +116,24 @@ img {
     border-radius: 8px;
     text-align: center;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #790b26;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f0dee6;
+}
