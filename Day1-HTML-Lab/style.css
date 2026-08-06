@@ -207,3 +207,23 @@ input[type="checkbox"] {
     width: auto;
     margin-right: 5px;
 }
+
+input:focus,/*element is currently selected*/
+select:focus,
+textarea:focus {
+    border-color: #7a0938;
+    outline: 2px solid #f1dfe8;
+}
+form button {
+    background-color: #7a0938;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d888b0;
+}
