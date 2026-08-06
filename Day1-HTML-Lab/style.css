@@ -137,3 +137,17 @@ th {
 tbody tr:nth-child(odd) {
     background-color: #f0dee6;
 }
+ul,ol{
+    padding-left: 30px;
+}
+
+li{
+    margin-bottom: 8px;
+}
+
+blockquote{
+    background-color: #f0dee6;
+    border-left: 5px solid #790b26;
+    margin: 15px 0;
+    padding: 15px;
+}
