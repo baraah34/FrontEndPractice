@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+
 header {
     background-color: #790b26;
     color: white;
@@ -52,7 +52,7 @@ section {
     background-color: white;
     margin-bottom: 25px;
     padding: 25px;
-    border: 1px solid #dddddd;
+    border: 1px solid #f0dee6;
     border-radius: 8px;
 }
 
@@ -124,7 +124,7 @@ table {
 }
 
 th,td {
-    border: 1px solid #cccccc;
+    border: 1px solid #f0dee6;
     padding: 12px;
     text-align: left;
 }
@@ -229,11 +229,20 @@ form button:hover {
 }
 
 address {
-    background-color: #eef5fc;
+    background-color: #f1dfe8;
     padding: 15px;
     font-style: normal;
 }
 
+address a {
+    color: #8b0038;
+    text-decoration: none;
+}
+
+address a:hover {
+    color: #d888b0;
+    text-decoration: underline;
+}
 footer {
     background-color: #790b26;
     color: white;
