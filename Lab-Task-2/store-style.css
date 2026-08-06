@@ -1,25 +1,21 @@
-
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f3ff;
+   font-family: "Times New Roman", Times, serif;
+    background-color: #cfc1b6;
     color: #333333;
     line-height: 1.6;
 }
 
-
 .main-header {
-    background-color: #4c1d95;
+    background-color: #194c61;
     color: white;
     text-align: center;
     padding: 35px 20px;
 }
-
 
 .main-header h1 {
     margin: 0 0 20px;
@@ -28,14 +24,8 @@ body {
     letter-spacing: 2px;
 }
 
-
-
 .search-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -60,19 +50,14 @@ body {
     background-color: #cfc1b6;
 }
 
-
-
 .account-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
+    text-align: center;
 }
 
 .account-nav a {
     color: white;
     text-decoration: none;
-    background-color: #6d28d9;
+    background-color: #194c61;
     padding: 8px 18px;
     border-radius: 20px;
 }
@@ -82,27 +67,23 @@ body {
     color: white;
 }
 
-
-
 main {
     width: 90%;
     max-width: 1200px;
     margin: 30px auto;
 }
 
-
-
 .breadcrumb {
     background-color: white;
     padding: 15px;
     margin-bottom: 25px;
-    border-left: 5px solid #7c3aed;
+    border-left: 5px solid #194c61;
     border-radius: 8px;
     box-shadow: 0 4px 10px #dddddd;
 }
 
 .breadcrumb a {
-    color: #6d28d9;
+    color: #194c61;
     text-decoration: none;
     font-weight: bold;
 }
@@ -112,17 +93,14 @@ main {
     text-decoration: underline;
 }
 
-
 h2 {
-    color: #4c1d95;
+    color: #194c61;
 }
 
 h3,
 h4 {
-    color: #5b21b6;
+    color: #194c61;
 }
-
-
 
 .search-information,
 .filters,
@@ -141,10 +119,8 @@ h4 {
     box-shadow: 0 5px 12px #dddddd;
 }
 
-
-
 button {
-    background-color: #6d28d9;
+    background-color: #194c61;
     color: white;
     border: none;
     padding: 11px 20px;
@@ -157,9 +133,6 @@ button:hover {
     background-color: #cfc1b6;
 }
 
-
-
-
 input,
 select {
     padding: 10px;
@@ -170,68 +143,58 @@ select {
 
 input:focus,
 select:focus {
-    border-color: #7c3aed;
-    outline: 2px solid #ddd6fe;
+    border-color: #194c61;
+    outline: 2px solid #f0eada;
 }
 
 fieldset {
     padding: 15px;
     margin-bottom: 15px;
-    border: 1px solid #a78bfa;
+    border: 1px solid #f0eada;
     border-radius: 8px;
 }
 
 legend {
-    color: #5b21b6;
+    color: #194c61;
     font-weight: bold;
 }
 
-
-
 .search-information {
-    background-color: #ede9fe;
+    background-color: #cfc1b6;
 }
 
-
-
 .filters {
-    background-color: #faf5ff;
+    background-color: #cfc1b6;
 }
 
 .filters fieldset {
     background-color: white;
 }
 
-
 .products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    background-color: #ede9fe;
+    background-color: #cfc1b6;
     padding: 25px;
     border-radius: 12px;
     margin-bottom: 25px;
 }
 
 .products h2 {
-    grid-column: 1 / -1;
     text-align: center;
     font-size: 32px;
 }
 
-
-
 .product-card {
     background-color: white;
     padding: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    border: 1px solid #ddd6fe;
+    border: 1px solid #cfc1b6;
     border-radius: 12px;
     box-shadow: 0 5px 12px #cccccc;
 }
 
 .product-card:hover {
-    border-color: #7c3aed;
+    border-color: #194c61;
     box-shadow: 0 8px 18px #bbbbbb;
 }
 
@@ -250,7 +213,7 @@ legend {
 }
 
 .product-card h3 a {
-    color: #4c1d95;
+    color: #194c61;
     text-decoration: none;
 }
 
@@ -263,7 +226,7 @@ legend {
 }
 
 .product-card p a {
-    color: #7c3aed;
+    color: #194c61;
     text-decoration: none;
 }
 
@@ -272,13 +235,12 @@ legend {
 }
 
 .product-card strong {
-    color: #c2410c;
+    color: #3b332f;
     font-size: 20px;
     background-color: #ffedd5;
     padding: 7px 15px;
     border-radius: 20px;
 }
-
 
 .product-images {
     text-align: center;
@@ -292,7 +254,7 @@ legend {
     max-width: 100%;
     height: auto;
     padding: 15px;
-    border: 2px solid #ddd6fe;
+    border: 2px solid #cfc1b6;
     border-radius: 12px;
     background-color: #fafafa;
 }
@@ -314,17 +276,15 @@ legend {
 }
 
 .product-images a img:hover {
-    border-color: #7c3aed;
+    border-color: #194c61;
 }
-
 
 .product-details {
     background-color: transparent;
 }
 
-
 .product-header {
-    background-color: #4c1d95;
+    background-color: #194c61;
     color: white;
     padding: 25px;
     margin-bottom: 25px;
@@ -341,21 +301,17 @@ legend {
     color: #fde68a;
 }
 
-
-
 .price-section strong {
-    color:  #cfc1b6;
+    color: #cfc1b6;
     font-size: 28px;
     background-color: #ffedd5;
     padding: 8px 16px;
     border-radius: 20px;
 }
 
-
 .model-section label {
     color: #333333;
 }
-
 
 .buy-box {
     background-color: #fff7ed;
@@ -367,7 +323,7 @@ legend {
 }
 
 .buy-box h3 {
-    color:  #cfc1b6;
+    color: #5a5552;
 }
 
 .buy-box strong {
@@ -385,16 +341,13 @@ legend {
     padding: 12px 20px;
 }
 
-
 .buy-box button:last-of-type {
-    background-color:  #cfc1b6;
+    background-color: #cfc1b6;
 }
 
 .buy-box button:last-of-type:hover {
-    background-color:  #cfc1b6;
+    background-color: #cfc1b6;
 }
-
-
 
 .description-section ul {
     padding-left: 25px;
@@ -404,8 +357,6 @@ legend {
     margin-bottom: 8px;
 }
 
-
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -414,7 +365,7 @@ table {
 
 caption {
     margin-bottom: 10px;
-    color: #5b21b6;
+    color: #194c61;
     font-weight: bold;
 }
 
@@ -426,18 +377,17 @@ td {
 }
 
 thead th {
-    background-color: #5b21b6;
+    background-color: #194c61;
     color: white;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #f5f3ff;
+    background-color: #e9e5dc;
 }
 
 tbody tr:hover {
-    background-color: #ffedd5;
+    background-color: #b8b1aa;
 }
-
 
 meter,
 progress {
@@ -445,40 +395,36 @@ progress {
     max-width: 100%;
 }
 
-
 .review-card {
-    background-color: #fffbeb;
+    background-color: #ece5df;
     padding: 20px;
     margin-bottom: 18px;
-    border-left: 6px solid  #cfc1b6;
+    border-left: 6px solid #194c61;
     border-radius: 8px;
 }
 
 .review-card h3 {
-    color: #cfc1b6;
+    color: #635b55;
 }
-
 
 .related-products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.related-products h2 {
-    grid-column: 1 / -1;
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
 }
 
 .related-product-card {
     background-color: #fafafa;
     padding: 18px;
+    margin-bottom: 20px;
     text-align: center;
     border: 1px solid #dddddd;
     border-radius: 10px;
 }
 
 .related-product-card:hover {
-    border-color: #7c3aed;
+    border-color: #194c61;
     box-shadow: 0 5px 12px #cccccc;
 }
 
@@ -490,37 +436,33 @@ progress {
 }
 
 .related-product-card a {
-    color: #4c1d95;
+    color: #194c61;
     text-decoration: none;
 }
 
 .related-product-card a:hover {
-    color:  #cfc1b6;
+    color: #cfc1b6;
 }
 
 .related-product-card strong {
     color: #cfc1b6;
 }
 
-
-
 .main-footer {
-    background-color: #2e1065;
+    background-color: #194c61;
     color: white;
     text-align: center;
     padding: 30px 20px;
 }
 
 .footer-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    text-align: center;
 }
 
 .footer-nav a {
     color: #fde68a;
     text-decoration: none;
+    margin: 0 8px;
 }
 
 .footer-nav a:hover {
