@@ -169,3 +169,53 @@ function getLowStockProducts() {
 
 }
 
+
+// 
+// 4. Toggle Low Stock
+
+let showingLowStock = false;
+
+
+document.getElementById("toggleBtn").addEventListener("click", function () {
+
+    
+
+
+        showingLowStock = !showingLowStock;
+
+
+        if (showingLowStock) {
+
+            const lowStockProducts = getLowStockProducts();
+               
+
+
+            renderProducts(lowStockProducts);
+
+
+            this.textContent ="Show All Products";
+                
+
+        }
+
+        else {
+
+            renderProducts(products);
+
+
+            this.textContent = "Show Low Stock Only";
+               
+
+        }
+
+
+    });
+
+
+
+// 
+// Initial Page Load
+
+renderProducts(products);
+
+calculateSummary();
