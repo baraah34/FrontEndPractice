@@ -33,3 +33,30 @@ if (userName) {
     console.log("Username is empty");
 }
 
+// ------------------------------------------------------------
+// 2.3 Control Flow
+// ------------------------------------------------------------
+
+const grades = [85, 92, 58, 73, 40];
+for (const grade of grades) {
+    if (grade >= 60) {
+        console.log(`${grade}: Pass`);
+    } else {
+        console.log(` ${grade}: Fail`);
+    }
+}
+
+const score = 85;
+switch (true) {
+    case score >= 90:
+        console.log("Grade: A");
+        break;
+    case score >= 80:
+        console.log("Grade: B");
+        break;
+    case score >= 70:
+        console.log("Grade: C");
+        break;
+        default:
+        console.log("Grade: F");
+}
