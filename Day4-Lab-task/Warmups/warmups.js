@@ -60,3 +60,89 @@ switch (true) {
         default:
         console.log("Grade: F");
 }
+
+// ------------------------------------------------------------
+// 2.4 Functions - Different Ways
+// ------------------------------------------------------------
+// 1. Function Declaration
+
+function isEvenDeclaration(number) {
+    return number % 2 === 0;
+}
+
+// 2. Function Expression
+
+const isEvenExpression = function (number) {
+    return number % 2 === 0;
+};
+// 3. Arrow Function
+
+const isEvenArrow = (number) => {
+    return number % 2 === 0;
+};
+
+
+// Test all three
+
+console.log(isEvenDeclaration(4)); // true
+
+console.log(isEvenExpression(4));  // true
+
+console.log(isEvenArrow(4));       // true
+
+
+// ------------------------------------------------------------
+// Default Parameter
+// ------------------------------------------------------------
+
+function greet(name = "Guest") {
+    return `Hello, ${name}`;
+}
+
+console.log(greet());
+
+console.log(greet("Baraah"));
+
+// ------------------------------------------------------------
+// Rest Parameter
+// ------------------------------------------------------------
+
+function sum(...numbers) {
+
+    let total = 0;
+
+    for (const number of numbers) {
+        total = total + number;
+    }
+
+    return total;
+}
+
+console.log(sum(1, 2, 3, 4));
+
+
+
+// ------------------------------------------------------------
+// 2.5 this Keyword
+// ------------------------------------------------------------
+
+const person = {
+
+    name: "Baraah",
+
+    // Regular function
+    regularMethod: function () {
+        return this.name;
+    },
+
+    // Arrow function
+    arrowMethod: () => {
+        return this.name;
+    }
+
+};
+
+
+console.log(person.regularMethod());
+
+console.log(person.arrowMethod());
