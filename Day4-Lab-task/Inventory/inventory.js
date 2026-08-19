@@ -108,3 +108,64 @@ function renderProducts(list) {
     document.getElementById("productList").innerHTML = list.map(renderProductCard).join(""); 
 
 }
+// 3. Calculate Summary
+// Uses plain loops as required
+// ------------------------------------------------------------
+
+function calculateSummary() {
+
+    let totalInventoryValue = 0;
+
+    let lowStockCount = 0;
+
+
+    for (const product of products) {
+
+        totalInventoryValue =totalInventoryValue +product.price * product.stock;
+            
+            
+
+
+        if (product.stock < 10) {
+
+            lowStockCount =lowStockCount + 1;
+                
+
+        }
+
+    }
+
+
+    document.getElementById("totalValue").textContent =`${totalInventoryValue.toFixed(2)} OMR`;
+        
+
+
+    document.getElementById("lowStockCount").textContent = lowStockCount;
+       
+
+}
+
+
+// Find Low Stock Products
+// ------------------------------------------------------------
+
+function getLowStockProducts() {
+
+    const lowStockProducts = [];
+
+
+    for (const product of products) {
+
+        if (product.stock < 10) {
+
+            lowStockProducts.push(product);
+
+        }
+
+    }
+
+
+    return lowStockProducts;
+
+}
+
