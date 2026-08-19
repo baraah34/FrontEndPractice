@@ -99,3 +99,12 @@ const renderProductCard = (product) => {
 
 };
 
+// Render Product List
+// Regular Function Declaration
+// ------------------------------------------------------------
+
+function renderProducts(list) {
+
+    document.getElementById("productList").innerHTML = list.map(renderProductCard).join(""); 
+
+}
